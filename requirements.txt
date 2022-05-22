@@ -1,0 +1,7 @@
+flask
+requests
+gunicorn
+pydantic
+psycopg2
+psycopg2-binary
+SQLAlchemy

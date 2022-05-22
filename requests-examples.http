@@ -1,0 +1,76 @@
+# примеры API-запросов
+
+@baseUrl = http://localhost:5000
+
+# получение пользователей
+GET {{baseUrl}}/user/
+Content-Type: application/json
+
+###
+
+# создание пользователя
+POST {{baseUrl}}/user/
+Content-Type: application/json
+
+{
+  "user_name": "valera_3",
+  "password": "краснодарский3",
+  "email": "email@3"
+}
+
+###
+
+
+# авторизация пользователей
+PATCH {{baseUrl}}/user/
+Content-Type: application/json
+
+{
+   "user_name": "valera_3",
+   "password": "краснодарский3"
+}
+
+###
+
+# получение объявлений
+GET {{baseUrl}}/advertisement/
+Content-Type: application/json
+
+###
+
+# создание объявления
+POST {{baseUrl}}/advertisement/
+Content-Type: application/json
+
+{
+    "title": "adv 1 motoаывавы7777777777",
+    "description": "adv 1 moto saleаываываывnbvnbnbv", 
+    "owner": 3
+}
+
+###
+
+# изменение объявления
+PATCH {{baseUrl}}/advertisement/
+Content-Type: application/json
+
+{
+    "id": 3,
+    "title": "new title",
+    "description": "new description", 
+    "owner": 3
+}
+
+###
+
+# удалить объявления
+DELETE {{baseUrl}}/advertisement/
+Content-Type: application/json
+
+{
+    "id": 3,
+    "owner": 3
+}
+
+###
+
